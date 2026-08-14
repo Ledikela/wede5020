@@ -1,0 +1,27 @@
+// Order Form Validation
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // stop page reload
+    
+    let name = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let phone = document.getElementById('phone').value.trim();
+    let order = document.getElementById('orderDetails').value.trim();
+
+    if (name === "" || email === "" || phone === "" || order === "") {
+        alert("Please fill in all required fields.");
+        return false;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    if (phone.length < 10) {
+        alert("Please enter a valid phone number.");
+        return false;
+    }
+
+    alert("Thank you " + name + "! Your order has been received. We will contact you shortly to confirm.");
+    this.reset(); // clear form
+});
