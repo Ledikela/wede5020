@@ -1,0 +1,20 @@
+// Form Validation for Volunteer Form
+document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // stop page reload
+    
+    let name = document.getElementById('vname').value.trim();
+    let email = document.getElementById('vemail').value.trim();
+
+    if (name === "" || email === "") {
+        alert("Please fill in your name and email.");
+        return false;
+    }
+
+    if (!email.includes("@")) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    alert("Thank you " + name + "! We will contact you soon about volunteering.");
+    this.reset(); // clear form
+});
