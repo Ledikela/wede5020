@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PART 3: SEO -->
+     <meta name="description" content="Sandton Community Outreach - Providing food, clothing and skills training to families in need in Gauteng. Donate and volunteer today.">
+     <meta name="keywords" content="charity Sandton, NPO Gauteng, food donation, volunteer Sandton, community outreach">
+     <meta name="author" content="Sandton Community Outreach">
+     <title>Sandton Community Outreach | Together We Can Make a Difference</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>Sandton Community Outreach</h1>
+            <p>Together We Can Make a Difference</p>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Main Navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#getinvolved">Get Involved</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <h2>Feeding Hope, Building Futures</h2>
+            <p>We provide food parcels, clothing, and skills training to over 500 families monthly in Sandton.</p>
+            <a href="#getinvolved" class="btn btn-primary">Donate Now</a>
+            <a href="#getinvolved" class="btn btn-secondary">Become a Volunteer</a>
+            <img src="images/community.jpg" alt="Volunteers packing food parcels for families">
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Sandton Community Outreach was founded in 2019 to fight hunger and poverty in our community. We are a registered NPO, NPO No: 123-456. Our vision is a Sandton where no one goes to bed hungry.</p>
+            <div class="stats">
+                <div><h3>500+</h3><p>Families Fed Monthly</p></div>
+                <div><h3>200+</h3><p>Active Volunteers</p></div>
+                <div><h3>50+</h3><p>Youth Trained</p></div>
+            </div>
+        </section>
+
+        <!-- PROGRAMS -->
+        <section id="programs">
+            <h2>Our Programs</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Weekly Food Drives</h3>
+                    <p>Distribution of food parcels every Saturday to vulnerable families.</p>
+                </div>
+                <div class="card">
+                    <h3>Youth Skills Training</h3>
+                    <p>Free workshops in sewing, baking, and computer literacy for unemployed youth.</p>
+                </div>
+                <div class="card">
+                    <h3>Winter Clothing Campaign</h3>
+                    <p>Collecting and distributing warm clothes and blankets during winter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GET INVOLVED / FORM - PART 3 FUNCTIONALITY -->
+        <section id="getinvolved">
+            <h2>Get Involved</h2>
+            <p>Your support changes lives. Choose how you’d like to help.</p>
+            
+            <form id="volunteerForm">
+                <h3>Volunteer Sign Up</h3>
+                <label for="vname">Full Name:</label>
+                <input type="text" id="vname" name="name" required>
+
+                <label for="vemail">Email:</label>
+                <input type="email" id="vemail" name="email" required>
+
+                <label for="vphone">Phone:</label>
+                <input type="tel" id="vphone" name="phone">
+
+                <label for="interest">Area of Interest:</label>
+                <select id="interest" name="interest">
+                    <option>Food Distribution</option>
+                    <option>Skills Training</option>
+                    <option>Admin & Fundraising</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+
+            <div class="donate-box">
+                <h3>Make a Donation</h3>
+                <p>Bank: FNB | Account: 123456789 | Branch: 250655</p>
+                <button class="btn btn-primary" onclick="alert('Thank you for your donation!')">Donate Online</button>
+            </div>
+        </section>
+
+        <!-- NEWS -->
+        <section id="news">
+            <h2>News & Events</h2>
+            <p><strong>Aug 2026:</strong> We distributed 600 food parcels this month. Thank you to all donors!</p>
+            <p><strong>Sept 2026:</strong> Upcoming Winter Drive - Drop off points at Sandton City.</p>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 45 Outreach Rd, Sandton, 2196</p>
+            <p><strong>Email:</strong> info@sandtonoutreach.org.za</p>
+            <p><strong>Phone:</strong> 011 987 6543</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0!2d28.0!3d-26.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sandton Community Outreach. All rights reserved. | NPO: 123-456</p>
+            <p>Follow us: Facebook | Instagram</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</html>
