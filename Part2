@@ -1,0 +1,56 @@
+/* WEDE5020 - Part 2 - ST10499414 - GRACLIN MPHOTELA LEDIKELA */
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --primary: #0A4D68;
+  --secondary: #05BFDB;
+  --accent: #FF6B35;
+  --light-bg: #F5F7F8;
+  --dark-text: #222831;
+  --font-head: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--dark-text);
+  background: var(--light-bg);
+}
+
+h1, h2, h3 { font-family: var(--font-head); font-weight:700; line-height:1.2; }
+h1 { font-size:2.5rem; } h2 { font-size:2rem; } h3 { font-size:1.5rem; }
+
+header {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:1rem 5%; background:#fff; box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  position:sticky; top:0;
+}
+nav ul { display:flex; gap:2rem; list-style:none; }
+.hero { display:grid; grid-template-columns:1fr 1fr; gap:2rem; padding:4rem 5%; }
+.content-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; padding:2rem 5%; }
+
+.btn {
+  background: var(--primary); color:white; padding:0.8em 1.6em;
+  border-radius:10px; border:none; transition:0.3s;
+}
+.btn:hover { background:var(--secondary); transform:translateY(-3px); box-shadow:0 8px 25px rgba(0,0,0,0.12); }
+.btn:active { transform:scale(0.97); }
+.card { background:white; border-radius:10px; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+.card:hover { box-shadow:0 8px 25px rgba(0,0,0,0.12); }
+img { max-width:100%; height:auto; }
+
+/* BREAKPOINTS - Responsive */
+@media screen and (max-width:768px){
+  .hero { grid-template-columns:1fr; text-align:center; }
+  .content-grid { grid-template-columns:repeat(2,1fr); }
+  header { flex-direction:column; }
+}
+@media screen and (max-width:480px){
+  .content-grid { grid-template-columns:1fr; }
+  nav ul { flex-direction:column; text-align:center; }
+  footer { flex-direction:column; text-align:center; }
+  body { font-size:14px; }
+}
