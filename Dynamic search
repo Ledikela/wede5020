@@ -1,0 +1,9 @@
+// js/filter.js
+function filterServices() {
+  let input = document.getElementById('searchInput').value.toLowerCase();
+  let cards = document.querySelectorAll('.service-card');
+  cards.forEach(card => {
+    let title = card.dataset.title.toLowerCase();
+    card.style.display = title.includes(input) ? 'block' : 'none';
+  });
+}
