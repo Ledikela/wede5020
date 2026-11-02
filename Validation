@@ -1,0 +1,12 @@
+// js/form.js
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  let email = document.getElementById('email').value;
+  let name = document.getElementById('name').value;
+  if(name === "" || !email.includes('@')){
+    document.getElementById('error').innerText = "Please enter a valid name and email";
+    return;
+  }
+  document.getElementById('success').innerText = "Thank you "+ name +"! We will contact you soon.";
+  this.reset();
+});
