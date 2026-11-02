@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<div id="map" style="height: 300px;"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  var map = L.map('map').setView([-26.1974, 28.1686], 13); // Katlehong coords
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+  L.marker([-26.1974, 28.1686]).addTo(map).bindPopup("Thato's Plumbing - Katlehong").openPopup();
+</script>
